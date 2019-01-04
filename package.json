@@ -1,0 +1,36 @@
+{
+  "name": "commish",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build:server": "babel server --out-dir dist",
+    "start": "nodemon -r dotenv/config ./node_modules/.bin/babel-node server/app.js",
+    "serve": "node dist/app.js"
+  },
+  "keywords": [],
+  "author": "Evan King",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "@slack/client": "^4.8.0",
+    "@slack/events-api": "^2.1.1",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "firebase-admin": "^6.4.0",
+    "passport": "^0.4.0",
+    "passport-slack": "0.0.7"
+  }
+}
